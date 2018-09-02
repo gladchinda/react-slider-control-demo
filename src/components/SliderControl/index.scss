@@ -1,0 +1,26 @@
+.slider-control {
+    $ball-size: 30px;
+    $height: 4px;
+    position: relative !important;
+    width: 250px;
+    &>&__rail,
+    &>&__ball {
+        position: absolute !important;
+        cursor: pointer !important;
+    }
+    &>&__rail {
+        height: $height;
+        width: 100%;
+        background: #dddddd;
+        border: 1px solid #dddddd;
+        border-radius: $height / 2;
+    }
+    &>&__ball {
+        height: $ball-size;
+        width: $ball-size;
+        background: #dddddd;
+        border: 5px solid #ffffff;
+        border-radius: $ball-size / 2;
+        top: ($height - $ball-size) / 2;
+    }
+}
