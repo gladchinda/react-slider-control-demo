@@ -1,6 +1,7 @@
 .slider-control {
   position: relative !important;
-  width: 250px; }
+  width: 250px;
+  z-index: 100; }
   .slider-control > .slider-control__rail,
   .slider-control > .slider-control__ball {
     position: absolute !important;
@@ -17,4 +18,5 @@
     background: #dddddd;
     border: 5px solid #ffffff;
     border-radius: 15px;
-    top: -13px; }
+    top: -13px;
+    z-index: 1; }

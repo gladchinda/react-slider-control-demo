@@ -3,6 +3,7 @@
     $height: 4px;
     position: relative !important;
     width: 250px;
+    z-index: 100;
     &>&__rail,
     &>&__ball {
         position: absolute !important;
@@ -22,5 +23,6 @@
         border: 5px solid #ffffff;
         border-radius: $ball-size / 2;
         top: ($height - $ball-size) / 2;
+        z-index: 1;
     }
 }
